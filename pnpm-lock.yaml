@@ -9,11 +9,13 @@ specifiers:
   typescript: ^4.7.4
   vite: ^3.0.9
   vue: ^2.7.10
+  vue-router: 3.6.4
   vue-tsc: ^0.40.1
 
 dependencies:
   pinia: 2.0.20_tj62uduopfezrrzl6ldoz6xxxm
   vue: 2.7.10
+  vue-router: 3.6.4_vue@2.7.10
 
 devDependencies:
   '@types/node': 18.7.13
@@ -1306,6 +1308,14 @@ packages:
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
+    dependencies:
+      vue: 2.7.10
+    dev: false
+
+  /vue-router/3.6.4_vue@2.7.10:
+    resolution: {integrity: sha512-QSJs5aKKPiwBH++gelVbnq0ZFbUZXjlsjAklUM+F8dtd49YY72QsD1uGpBk/cqLK1bkZ8HiqPjS8NkhaGtpqHw==}
+    peerDependencies:
+      vue: ^2
     dependencies:
       vue: 2.7.10
     dev: false

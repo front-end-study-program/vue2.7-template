@@ -1,11 +1,13 @@
 <template>
   <div>
     <Count />
-    <todo />
+    <div><a href="/#/todo">todo</a></div>
+    <div><a href="/#/">home</a></div>
+    <br>
+    <router-view></router-view>
   </div>
 </template>
 <script setup lang="ts">
 import Count from './components/Count'
-import todo from './views/todo.vue'
 </script>
 <style scoped></style>
