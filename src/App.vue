@@ -3,7 +3,7 @@
     <Count />
     <div><a href="/#/todo">todo</a></div>
     <div><a href="/#/">home</a></div>
-    <br>
+    <br />
     <router-view></router-view>
   </div>
 </template>

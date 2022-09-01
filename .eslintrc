@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "parser": "vue-eslint-parser", // 针对vue文件的解析器，默认是Espree解析器
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser" // 针对vue文件中typescript语法的解析器
+      }
+    }
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false, // 末尾分号
+        "singleQuote": true, // 使用单引号
+        "arrowParens": "avoid", // 箭头函数括号
+        "trailingComma": "none" // 最后key不跟分号
+      }
+    ]
+  }
+}
